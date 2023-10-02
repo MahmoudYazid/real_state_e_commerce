@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.SearchContainer{
+    background-image: url('/mumbai-skyline-skyscrapers-construction.jpg');
+    background-size: cover;
+    background-position-y: 60%;
+    
+}
+.ControlPlaceHolders::placeholder{
+     text-align: center;
+    color: #C0B9B9;
+}
+
+.Caro{
+    background-image: url('/WhatsApp-Image-2020-02-06-at-12.30.03.jpeg');
+    background-size: cover;
+    background-position-y: 60%;
+    
+}
+.ControlTextInsideTextInput{
+    text-align:center;
+
+}
+.LoginBackGround{
+      
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+}
+.TextAreaResizeAble{
+resize: none;
+}
+
+.AdvBackground{
+        
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+}

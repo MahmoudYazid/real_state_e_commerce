@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Komika Title
+Author: Apostrophic Labs
+Url: http://www.fontsquirrel.com/fonts/Komika-Title
+
+Font: OSP DIN
+Author: OSP-foundry
+Url: http://www.fontsquirrel.com/fonts/osp-din
