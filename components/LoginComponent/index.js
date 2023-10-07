@@ -10,7 +10,7 @@ export default function index() {
   const PasswordInputRef = useRef()
   const router = useRouter()
   const CheckExist = ()=>{
-    axios.get('http://localhost:3000/api/login',{
+    axios.get('http://16.171.176.203:3000/api/login',{
       headers:{
         phone: String(encodeURIComponent(phoneInputRef.current.value)),
         password: String(encodeURIComponent(PasswordInputRef.current.value))

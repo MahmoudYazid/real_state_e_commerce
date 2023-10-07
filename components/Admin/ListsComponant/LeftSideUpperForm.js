@@ -6,14 +6,14 @@ import axios from 'axios';
 export default function LeftSideUpperForm() {
     const [FetchedData, SetFetchedData] = useState([]);
     const GetData = () => {
-        axios.get('http://localhost:3000/api/getallstates').then((data) => {
+        axios.get('http://16.171.176.203:3000/api/getallstates').then((data) => {
             SetFetchedData(data.data.res)
         })
 
     }
 
     const delAd = (IdInput) => {
-        axios.get('http://localhost:3000/api/delstate', {
+        axios.get('http://16.171.176.203:3000/api/delstate', {
             headers: {
                 id: IdInput
             }

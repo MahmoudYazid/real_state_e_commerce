@@ -29,7 +29,7 @@ export default function LeftSide() {
 
   }
   const GetFetchAllAds = async () => {
-    const data = await axios.get('http://localhost:3000/api/getadvforusers', {
+    const data = await axios.get('http://16.171.176.203:3000/api/getadvforusers', {
       headers: {
         start: StartState,
         end: EndState
@@ -44,7 +44,7 @@ export default function LeftSide() {
   }
 
   const DelAd = async (id_) => {
-    const data = await axios.get('http://localhost:3000/api/deluserads', {
+    const data = await axios.get('http://16.171.176.203:3000/api/deluserads', {
       headers: {
         id: id_,
         
@@ -58,7 +58,7 @@ export default function LeftSide() {
 
   }
   const updatevalue = async (id_) => {
-    const data = await axios.get('http://localhost:3000/api/changevalue', {
+    const data = await axios.get('http://16.171.176.203:3000/api/changevalue', {
       headers: {
         id: id_,
         newvalue: NewValueRef

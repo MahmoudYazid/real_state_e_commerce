@@ -8,7 +8,7 @@ export default function LeftSideLowerForm() {
 
     const AddToDb=()=>{
         if (Selection.current.value == "state"){
-            axios.get('http://localhost:3000/api/addstate',{
+            axios.get('http://16.171.176.203:3000/api/addstate',{
                 headers:{
                     item: String(encodeURIComponent(itemName.current.value))
                 }
@@ -19,7 +19,7 @@ export default function LeftSideLowerForm() {
         }
 
         if (Selection.current.value == "Type_of_ads") {
-            axios.get('http://localhost:3000/api/addadv', {
+            axios.get('http://16.171.176.203:3000/api/addadv', {
                 headers: {
                     item: String(encodeURIComponent(itemName.current.value))
                 }

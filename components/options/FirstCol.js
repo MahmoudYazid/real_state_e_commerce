@@ -9,7 +9,7 @@ export default function FirstCol() {
   const [FetchedData, SetFetchedData] = useState([])
 
   const getAdv = () => {
-    axios.get('http://localhost:3000/api/getmyads',{
+    axios.get('http://16.171.176.203:3000/api/getmyads',{
       headers: {
         id: String(JSON.parse(getCookie('realstate'))[0]['_id'])
       }
@@ -22,7 +22,7 @@ export default function FirstCol() {
 
   }
   const DelAd = async (id_) => {
-    const data = await axios.get('http://localhost:3000/api/deluserads', {
+    const data = await axios.get('http://16.171.176.203:3000/api/deluserads', {
       headers: {
         id: id_,
 

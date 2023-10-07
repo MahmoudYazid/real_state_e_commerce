@@ -8,7 +8,7 @@ export default function index() {
     const router = useRouter()
     const { id } = router.query;
     const GetData=()=>{
-        axios.get('http://localhost:3000/api/getspecificadv',{
+        axios.get('http://16.171.176.203:3000/api/getspecificadv',{
             headers:{
                 id_: id,
             }

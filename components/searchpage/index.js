@@ -33,7 +33,7 @@ export default function index() {
 
     }
     const GetFetchAllAds = async () => {
-        const data = await axios.get('http://localhost:3000/api/adsfilter', {
+        const data = await axios.get('http://16.171.176.203:3000/api/adsfilter', {
             headers: {
                 center: String(encodeURIComponent(centerparam)) ,
                 state: String(encodeURIComponent(stateparam))  ,

@@ -15,7 +15,7 @@ export default function RightSideLower() {
             return;
         }
 
-        const response = await fetch('http://localhost:3000/api/uploadadminads', {
+        const response = await fetch('http://16.171.176.203:3000/api/uploadadminads', {
             method: 'POST',
             headers: {
                 title: String(encodeURIComponent(TitleRef.current.value)),

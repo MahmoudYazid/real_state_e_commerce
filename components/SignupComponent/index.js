@@ -10,7 +10,7 @@ export default function index() {
     const [Result, SetResult] = useState('')
 
     const SendPhoneApiFetch =()=>{
-        const data =  axios.get('http://localhost:3000/api/reg/signup', {
+        const data = axios.get('http://16.171.176.203:3000/api/reg/signup', {
             headers: {
                 "content-type": "application/x-www-form-urlencoded;charset=UTF-8",
                 phone: `${String(encodeURIComponent(phoneInput.current.value))  }` ,

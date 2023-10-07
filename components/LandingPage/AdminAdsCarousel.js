@@ -12,7 +12,7 @@ export default function AdminAdsCarousel() {
   }
 
   const GetData =  ()=>{
-     fetch('http://localhost:3000/api/getalladminads',{
+    fetch('http://16.171.176.203:3000/api/getalladminads',{
       method: 'GET',
     }).then((res) => {
       res.json().then((Fdata) => {

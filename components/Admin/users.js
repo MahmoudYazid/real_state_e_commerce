@@ -27,7 +27,7 @@ export default function users() {
 
     }
     const GetUsersApiFetch = async () => {
-        const data = await axios.get('http://localhost:3000/api/getallusers', {
+        const data = await axios.get('http://16.171.176.203:3000/api/getallusers', {
             headers: {
                 start: StartState,
                 end: EndState
@@ -41,7 +41,7 @@ export default function users() {
 
     }
     const DelusersApiFetch = async (IdInput) => {
-        const data = await axios.get('http://localhost:3000/api/DelUser', {
+        const data = await axios.get('http://16.171.176.203:3000/api/DelUser', {
             headers: {
                 id: IdInput,
 

@@ -33,7 +33,7 @@ export default function index() {
     EndDateDate.setDate(EndDateDate.getDate() + Number(selectedEndDateRef.current.value));
 
 
-    const response = await fetch('http://localhost:3000/api/uploadclientadd', {
+    const response = await fetch('http://16.171.176.203:3000/api/uploadclientadd', {
       method: 'POST',
       headers: {
         title: String(encodeURIComponent(TitleRef.current.value)) ,
@@ -69,7 +69,7 @@ export default function index() {
 
   const ChangeCenters = (Selection) => {
 
-    axios.get('http://localhost:3000/api/getspecificcenters', {
+    axios.get('http://16.171.176.203:3000/api/getspecificcenters', {
       headers: {
         state: String(encodeURIComponent(Selection))
       }
@@ -82,20 +82,20 @@ export default function index() {
 
 
   const GetCentersListData = () => {
-    axios.get('http://localhost:3000/api/getallcenters').then((data) => {
+    axios.get('http://16.171.176.203:3000/api/getallcenters').then((data) => {
       SetCenters(data.data.res)
 
     })
 
   }
   const GetAdsTypesListData = () => {
-    axios.get('http://localhost:3000/api/getadv').then((data) => {
+    axios.get('http://16.171.176.203:3000/api/getadv').then((data) => {
       SetAdsTypes(data.data.res)
     })
 
   }
   const GetStateTypesListData = () => {
-    axios.get('http://localhost:3000/api/getallstates').then((data) => {
+    axios.get('http://16.171.176.203:3000/api/getallstates').then((data) => {
       Setstate(data.data.res)
     })
 

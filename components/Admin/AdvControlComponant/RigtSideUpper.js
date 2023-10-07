@@ -5,7 +5,7 @@ import { RiMoneyDollarCircleFill, RiAdvertisementFill } from 'react-icons/ri'
 export default function RigtSideUpper() {
     const [FetchedData, SetFetchedData] = useState([])
     const GetData = () => {
-        fetch('http://localhost:3000/api/getalladminads', {
+        fetch('http://16.171.176.203:3000/api/getalladminads', {
             method: 'GET',
         }).then((res) => {
             res.json().then((Fdata) => {
@@ -17,7 +17,7 @@ export default function RigtSideUpper() {
 
     }
     const DelAdd = (idInput) => {
-        fetch('http://localhost:3000/api/deladminads', {
+        fetch('http://16.171.176.203:3000/api/deladminads', {
             method: 'GET',
             headers:{
                 id_: idInput

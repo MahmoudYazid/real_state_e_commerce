@@ -27,7 +27,7 @@ export default function AdvPlace() {
 
   }
   const GetFetchAllAds = async () => {
-    const data = await axios.get('http://localhost:3000/api/getadvforusers', {
+    const data = await axios.get('http://16.171.176.203:3000/api/getadvforusers', {
       headers: {
         start: StartState,
         end: EndState

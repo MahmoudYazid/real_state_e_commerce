@@ -7,13 +7,13 @@ export default function RightSideLowerComponant() {
     const [FetchedData, SetFetchedData] = useState([]);
 
     const GetCentersListData = () => {
-        axios.get('http://localhost:3000/api/getallcenters').then((data) => {
+        axios.get('http://16.171.176.203:3000/api/getallcenters').then((data) => {
             SetFetchedData(data.data.res)
         })
 
     }
     const delcenter = (IdInput) => {
-        axios.get('http://localhost:3000/api/delcenter', {
+        axios.get('http://16.171.176.203:3000/api/delcenter', {
             headers: {
                 id: IdInput
             }

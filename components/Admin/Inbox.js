@@ -25,7 +25,7 @@ export default function Inbox() {
       
     }
     const GetPhonesApiFetch = async () => {
-        const data =  await axios.get('http://localhost:3000/api/getallphones', {
+        const data =  await axios.get('http://16.171.176.203:3000/api/getallphones', {
             headers: {
                 start: StartState,
                 end: EndState
@@ -38,7 +38,7 @@ export default function Inbox() {
 
     }
     const DelPhonesApiFetch = async (phoneInput) => {
-        const data = await axios.get('http://localhost:3000/api/deletephones', {
+        const data = await axios.get('http://16.171.176.203:3000/api/deletephones', {
             headers: {
                 phone: phoneInput,
               

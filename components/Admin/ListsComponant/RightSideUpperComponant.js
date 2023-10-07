@@ -5,14 +5,14 @@ import axios from 'axios';
 export default function RightSideUpperComponant() {
     const [FetchedData, SetFetchedData]=useState([]);
     const GetData =()=>{
-        axios.get('http://localhost:3000/api/getadv').then((data)=>{
+        axios.get('http://16.171.176.203:3000/api/getadv').then((data)=>{
             SetFetchedData(data.data.res)
         })
         
     }
 
     const delAd = (IdInput) => {
-        axios.get('http://localhost:3000/api/delAdd',{
+        axios.get('http://16.171.176.203:3000/api/delAdd',{
             headers:{
                 id: IdInput
             }

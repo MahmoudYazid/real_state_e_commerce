@@ -8,7 +8,7 @@ export default function SecondCol() {
     const [NewpassRef, SetNewpassRef] = useState('')
 
     const Change=()=>{
-         axios.get('http://localhost:3000/api/changepassword',{
+        axios.get('http://16.171.176.203:3000/api/changepassword',{
             headers:{
                  id: String(JSON.parse(getCookie('realstate'))[0]['_id']),
                  newvalue: NewpassRef

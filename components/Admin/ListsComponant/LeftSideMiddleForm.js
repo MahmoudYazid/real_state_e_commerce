@@ -7,14 +7,14 @@ export default function LeftSideMiddleForm() {
     const StateNameRef =useRef()
     const [result, Setresult] = useState('')
     const GetStateListData = () => {
-        axios.get('http://localhost:3000/api/getallstates').then((data) => {
+        axios.get('http://16.171.176.203:3000/api/getallstates').then((data) => {
             SetFetchedData(data.data.res)
         })
 
     }
 
     const AddToDb = () => {
-            axios.get('http://localhost:3000/api/addcenter', {
+            axios.get('http://16.171.176.203:3000/api/addcenter', {
                 headers: {
                     center: String(encodeURIComponent(CenterNameRef.current.value)),
                     state: String(encodeURIComponent(StateNameRef.current.value))

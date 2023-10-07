@@ -14,7 +14,7 @@ export default function SearchSection() {
 
   const ChangeCenters = (Selection)=>{
     
-    axios.get('http://localhost:3000/api/getspecificcenters',{
+    axios.get('http://16.171.176.203:3000/api/getspecificcenters',{
       headers: {
         state: String(encodeURIComponent(Selection))
       }
@@ -27,20 +27,20 @@ export default function SearchSection() {
 
 
   const GetCentersListData = () => {
-    axios.get('http://localhost:3000/api/getallcenters').then((data) => {
+    axios.get('http://16.171.176.203:3000/api/getallcenters').then((data) => {
       SetCenters(data.data.res)
      
     })
 
   }
   const GetAdsTypesListData = () => {
-    axios.get('http://localhost:3000/api/getadv').then((data) => {
+    axios.get('http://16.171.176.203:3000/api/getadv').then((data) => {
       SetAdsTypes(data.data.res)
     })
 
   }
   const GetStateTypesListData = () => {
-    axios.get('http://localhost:3000/api/getallstates').then((data) => {
+    axios.get('http://16.171.176.203:3000/api/getallstates').then((data) => {
       Setstate(data.data.res)
     })
 

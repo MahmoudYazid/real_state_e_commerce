@@ -10,7 +10,7 @@ export default function Form() {
     const [PhoneRef, SetPhoneRef] = useState('')
     const [Result,SetResult] = useState('')
     const SendPhoneApiFetch = async (phoneInput) => {
-        const data = await axios.get('http://localhost:3000/api/sendphone', {
+        const data = await axios.get('http://16.171.176.203:3000/api/sendphone', {
             headers: {
                 phone: phoneInput
             }
